@@ -29,7 +29,7 @@ const App = () => {
     printUserData = UserData.map(function (elem, idx) {
       return (
         <div key={idx}>
-          <Card elem={elem}/>
+          <Card elem={elem} />
         </div>
       );
     });
@@ -37,10 +37,9 @@ const App = () => {
 
   return (
     <div className="bg-black overflow-auto h-screen p-4 text-white">
-      
       <div className="flex h-[82%] flex-wrap gap-4">{printUserData}</div>
 
-      <div className="flex justify-center gap-6 items-center p-4">
+      <div className="flex fixed inset-x-0 bottom-0 z-10 justify-center gap-6 items-center p-4">
         <button
           className="bg-amber-400 cursor-pointer active:scale-95 text-sm text-black rounded px-4 py-2 font-semibold"
           onClick={() => {
